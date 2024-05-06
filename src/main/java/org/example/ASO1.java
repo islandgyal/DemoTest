@@ -1,6 +1,7 @@
 package org.example;
 
-public class ASO1 <T extends Object & TypeFlux> extends MessagePablo<T>{
+public class ASO1 <T extends TypeFlux> extends MessagePablo<T>{
+    String id="ASO1";
 
     public ASO1(T elem) {
         super(elem);
@@ -12,5 +13,6 @@ public class ASO1 <T extends Object & TypeFlux> extends MessagePablo<T>{
     }
 
     public void affiche2() {
+        System.out.println("ASO1.affiche2");
     }
 }

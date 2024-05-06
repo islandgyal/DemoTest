@@ -1,5 +1,10 @@
 package org.example;
 
 public interface TypeFlux {
-    public void affiche();
+ abstract    public void affiche();
+ default void defaultVoid(){
+  System.out.println("TypeFlux.defaultVoid");
+  }
+
+
 }
